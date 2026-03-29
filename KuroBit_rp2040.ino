@@ -19,7 +19,7 @@ uint8_t const desc_hid_report[] = {
   0xC0
 };
 
-Adafruit_USBD_HID usb_hid(desc_hid_report, sizeof(desc_hid_report), HID_ITF_PROTOCOL_NONE, 100, false);
+Adafruit_USBD_HID usb_hid(desc_hid_report, sizeof(desc_hid_report), HID_ITF_PROTOCOL_NONE, 10, false);
 
 // ---------- Дисплей ----------
 Adafruit_SSD1306 display(128, 32, &Wire1, -1);
